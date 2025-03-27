@@ -6,6 +6,8 @@ const numRandomList = document.getElementById('numbers-list')
 const numUser = document.querySelector('input')
 const button = document.querySelector('button')
 const message = document.getElementById('message')
+const instructions = document.getElementById('instructions')
+const answersForm = document.getElementById('answers-form')
 
 
 // definisco il timer
@@ -21,8 +23,11 @@ timer = setInterval(() => {
 },1000)
 
 setTimeout(() => {
-    clearInterval(timer)}
-    ,10000)
+    clearInterval(timer);
+    numRandomList.innerHTML = '';
+    instructions.innerHTML = 'Inserisci i numeri memorizzati, anche in ordine casuale';
+    answersForm.classList.remove("d-none")
+},10000)
 
 
 // gestione numeri random
