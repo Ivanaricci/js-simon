@@ -24,8 +24,22 @@ setTimeout(() => {
     clearInterval(timer)}
     ,10000)
 
+
+
 // Definisco l'array che conterrà i numeri random
-const numRandom = [''];
+
+
+function generateRandomNum(){
+    let ArrayNumRandom = [];
+    for (let i=0; i< 5; i++){
+        ArrayNumRandom.push(Math.floor(Math.random() * 100) +1)
+    }
+
+    return ArrayNumRandom
+    
+}
+
+let numRandom = generateRandomNum()
 
 
 
