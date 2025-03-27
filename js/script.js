@@ -10,14 +10,14 @@ const message = document.getElementById('message')
 
 // definisco il timer
 let timer;
-
-// gestione del timer
 let count = 1;
-numRandomList.innerText = count;
+
+countdown.innerText = count;
+
 
 timer = setInterval(() => {
     count++;
-    numRandomList.innerText = count;
+    countdown.innerText = count;
 },1000)
 
 setTimeout(() => {
@@ -25,7 +25,7 @@ setTimeout(() => {
     ,10000)
 
 
-
+// gestione numeri random
 // Definisco l'array che conterrà i numeri random
 
 
