@@ -12,13 +12,17 @@ const message = document.getElementById('message')
 let timer;
 
 // gestione del timer
-let count = 0;
+let count = 1;
 numRandomList.innerText = count;
 
 timer = setInterval(() => {
     count++;
     numRandomList.innerText = count;
 },1000)
+
+setTimeout(() => {
+    clearInterval(timer)}
+    ,10000)
 
 // Definisco l'array che conterrà i numeri random
 const numRandom = [''];
