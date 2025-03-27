@@ -63,4 +63,16 @@ for (let i=0; i<numRandom.length; i++){
 numRandomList.innerHTML = items
 
 
+button.addEventListener('click', function(event){
+    event.preventDefault();
 
+    // prendo i valori inseriri dall'utente e li inserisco nell'array
+    let userNumbers = [];
+    for (let i=0; i<numUser.length; i++){
+        userNumbers.push(parseInt(numUser[i].value));
+    }
+
+   
+
+    
+})
