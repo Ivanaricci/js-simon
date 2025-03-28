@@ -73,7 +73,7 @@ answersForm.addEventListener('submit', function(event){
     }
 
     let correctNum = [];
-    for (let i=0; i<numRandom; i++){
+    for (let i=0; i<numRandom.length; i++){
         for(let j=0; j<userNumbers.length; j++){
             if(numRandom[i] === userNumbers[j]){
                 correctNum.push(numRandom[i])
